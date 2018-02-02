@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&subset=cyrillic');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.header {
+    display: grid;
+    width: 100%;
+    height: 430px;
+    justify-items: center;
+    align-items: center;
+    grid-template-rows: 50% 30% 20%;
+    background: url("img/header.jpg")no-repeat center 95%;
+}
+
+.logo {
+    color: lightyellow;
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: 100px;
+    height: 100px;
+    border: 4px solid lightyellow;
+    border-radius: 10px;
+    font-size: 41px;
+    font-weight: 400;
+}
+
+.logo__firstLetter {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.logo__secondLetter {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.logo__slash {
+    position: absolute;
+    top: 50%;
+    width: 100px;
+    height: 4px;
+    background-color: lightyellow;
+    transform: rotate(-45deg);
+}
+
+.header__name,
+.header__profession {
+    color: lightyellow;
+    font-weight: 100;
+}
+
+.header__name {
+    font-size: 67px;
+}
+
+.header__profession {
+    font-size: 26px;
+}
+
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.biography {
+    padding: 10px 25px 10px;
+    border-left: 2px solid #fdc7a5;
+    margin-top: 50px;
+}
+
+.biography__title {
+    margin-bottom: 20px;
+}
+
+.biography__text p {
+    margin: 20px 0;
+}
+
+.educations {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 80px;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.educations__graduate {
+    grid-column: 1 / 3;
+    background-color: #ffd89347;
+    border-radius: 10px;
+    padding: 29px;
+}
+
+.educations__courses {
+    grid-column: 4 / 6;
+    background-color: #ffd89347;
+    border-radius: 10px;
+    padding: 17px;
+}
+
+.educations__certificates {
+    grid-column: 2 / 5;
+    grid-row: 2 / 3;
+    background-color: #ffd89347;
+    border-radius: 10px;
+    padding: 20px 30px 30px;
+}
+
+.educations h4 {
+    margin-bottom: 40px;
+}
+
+.educations h5 {
+    margin-bottom: 15px;
+}
+
+.educations__certificates li {
+    list-style: none;
+    padding-top: 7px;
+}
+
+.educations__certificates a {
+    text-decoration: none;
+    color: black;
+}
+
+.educations__certificates a:hover {
+    font-weight: 400;
+}
