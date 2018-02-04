@@ -21,6 +21,7 @@ body {
     grid-template-rows: 50% 30% 20%;
     background: url("img/header.jpg")no-repeat center 95%;
     box-shadow: 0 3px 14px 1px #2f2c2c;
+    overflow: hidden;
 }
 
 .logo {
@@ -37,6 +38,12 @@ body {
     border-radius: 10px;
     font-size: 41px;
     font-weight: 400;
+    top: 0;
+    transition: 1.5s;
+}
+
+.logo_hide {
+    top: -164px;
 }
 
 .logo__firstLetter {
@@ -66,10 +73,24 @@ body {
 
 .header__name {
     font-size: 67px;
+    position: relative;
+    top: 0;
+    transition: 2.2s;
+}
+
+.header__name_hide {
+    top: -319px;
 }
 
 .header__profession {
     font-size: 26px;
+    position: relative;
+    top: 0;
+    transition: 1.8s;
+}
+
+.header__profession_hide {
+    top: 82px;
 }
 
 .wrapper {
