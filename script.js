@@ -15,9 +15,9 @@ function show() {
         logo.classList.remove('header__profession_hide');
     }
 
-    setTimeout(showLogo, 300);
-    setTimeout(showName, 1400);
-    setTimeout(showProfession, 2000);
+    setTimeout(showLogo, 500);
+    setTimeout(showName, 1600);
+    setTimeout(showProfession, 2200);
 }
 
 show();
