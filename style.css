@@ -119,6 +119,7 @@ body {
     border-radius: 10px;
     padding: 17px;
     box-shadow: 0 3px 20px 0 #969393;
+    align-self: stretch;
 }
 
 .educations__courses {
@@ -127,6 +128,7 @@ body {
     border-radius: 10px;
     padding: 17px;
     box-shadow: 0 3px 20px 0 #969393;
+    align-self: stretch;
 }
 
 .educations__certificates {
@@ -173,7 +175,7 @@ body {
 
 .skills__skill {
     display: grid;
-    grid-template-columns: 30% repeat(10, 1fr);
+    grid-template-columns: 35% repeat(10, 1fr);
     align-items: center;
     justify-items: center;
 }
@@ -290,7 +292,7 @@ body {
 
     .skills {
         grid-row-gap: 32px;
-        grid-column-gap: 60px;
+        grid-column-gap: 50px;
         margin-top: 40px;
     }
 
@@ -317,4 +319,16 @@ body {
         padding: 50px 15% 30px;
         margin-top: 40px;
     }
+}
+
+@media all and (max-width: 768px) {
+    .educations__certificates {
+        grid-column: 1 / 6;
+    }
+
+    .skills__skill span {
+        width: 10px;
+        height: 10px;
+    }
+
 }
