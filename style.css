@@ -114,6 +114,7 @@ body {
 }
 
 .educations__graduate {
+    display: grid;
     grid-column: 1 / 3;
     background-color: #ffd89347;
     border-radius: 10px;
@@ -123,6 +124,7 @@ body {
 }
 
 .educations__courses {
+    display: grid;
     grid-column: 4 / 6;
     background-color: #ffd89347;
     border-radius: 10px;
@@ -292,7 +294,7 @@ body {
 
     .skills {
         grid-row-gap: 32px;
-        grid-column-gap: 50px;
+        grid-column-gap: 30px;
         margin-top: 40px;
     }
 
@@ -330,5 +332,24 @@ body {
         width: 10px;
         height: 10px;
     }
+}
 
+@media all and (max-width: 768px) {
+
+    .header {
+        height: 300px;
+    }
+
+    .educations {
+        grid-row-gap: 50px;
+    }
+
+    .skills__skill span {
+        width: 9px;
+        height: 9px;
+    }
+
+    .hobbies {
+        margin: 45px 60px;
+    }
 }
