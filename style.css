@@ -237,3 +237,84 @@ body {
     text-decoration: none;
     color: black;
 }
+
+@media all and (max-width: 940px) {
+
+    body {
+        font-size: 17px;
+    }
+
+    .header {
+        height: 350px;
+        grid-template-rows: 50% 30% 20%;
+        background: url(img/header.jpg)no-repeat center 89%;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+        font-size: 33px;
+    }
+
+    .logo__slash {
+        width: 80px;
+    }
+
+    .header__name {
+        font-size: 63px;
+    }
+
+    .header__profession {
+        font-size: 23px;
+    }
+
+    .biography {
+        margin-top: 30px;
+    }
+
+    .educations {
+        grid-row-gap: 60px;
+    }
+
+    .educations h4 {
+        margin-bottom: 30px;
+    }
+
+    .educations__certificates li {
+        padding-bottom: 9px;
+    }
+
+    .educations i {
+        font-size: 3.5em;
+    }
+
+    .skills {
+        grid-row-gap: 32px;
+        grid-column-gap: 60px;
+        margin-top: 40px;
+    }
+
+    .skills__skill span {
+        width: 12px;
+        height: 12px;
+    }
+
+    .hobbies {
+        margin: 45px 90px;
+        grid-row-gap: 70px;
+    }
+
+    .hobbies__one {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hobbies__one i {
+        font-size: 2.7em;
+    }
+
+    .footer {
+        padding: 50px 15% 30px;
+        margin-top: 40px;
+    }
+}
